@@ -7,9 +7,13 @@ class employee:
     def fullname(self):
         return '{} {}'.format(self.first, self.last)
     
+    def new_method(self):
+        return "{} {}".format(self.first, self.location)
+    
 
 emp1 = employee( "Wajih" ,"ullah" , "1,00,000", "Hyderabad")
 emp2 = employee("Muneef", "Khan", "50,000", "Mehdipatnam")
 
 print(emp1.fullname())
 print(emp2.fullname())
+print(emp2.new_method())
