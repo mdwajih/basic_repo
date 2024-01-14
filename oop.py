@@ -17,7 +17,7 @@ class employee:
 emp1 = employee( "Wajih" ,"ullah" , 100000, "Hyderabad")
 emp2 = employee("Muneef", "Khan", 50000, "Mehdipatnam")
 
-print(emp1.pay)
-emp1.apply_raise()
-print(emp1.pay)
-
+# print(emp1.pay)
+# emp1.apply_raise()
+# print(emp1.pay)
+print(employee.__dict__)
