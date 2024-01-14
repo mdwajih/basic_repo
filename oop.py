@@ -20,4 +20,9 @@ emp2 = employee("Muneef", "Khan", 50000, "Mehdipatnam")
 # print(emp1.pay)
 # emp1.apply_raise()
 # print(emp1.pay)
-print(employee.__dict__)
+# print(employee.__dict__)
+emp2.raise_amount = 1.08
+
+print(employee.raise_amount)
+print(emp1.raise_amount)
+print(emp2.raise_amount)
