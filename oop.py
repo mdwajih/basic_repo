@@ -1,19 +1,23 @@
 class employee:
+
+    raise_amount = 1.04
+
     def __init__(self, first, last, pay, location):
         self.first = first
         self.last = last
         self.pay = pay
         self.location = location
+
     def fullname(self):
         return '{} {}'.format(self.first, self.last)
     
-    def new_method(self):
-        return "{} {}".format(self.first, self.location)
-    
+    def apply_raise(self):
+        self.pay = int(self.pay * employee.raise_amount)
 
-emp1 = employee( "Wajih" ,"ullah" , "1,00,000", "Hyderabad")
-emp2 = employee("Muneef", "Khan", "50,000", "Mehdipatnam")
+emp1 = employee( "Wajih" ,"ullah" , 100000, "Hyderabad")
+emp2 = employee("Muneef", "Khan", 50000, "Mehdipatnam")
 
-print(emp1.fullname())
-print(emp2.fullname())
-print(emp2.new_method())
+print(emp1.pay)
+emp1.apply_raise()
+print(emp1.pay)
+
