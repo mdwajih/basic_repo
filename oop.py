@@ -17,10 +17,7 @@ class employee:
 emp1 = employee( "Wajih" ,"ullah" , 100000, "Hyderabad")
 emp2 = employee("Muneef", "Khan", 50000, "Mehdipatnam")
 
-# print(emp1.pay)
-# emp1.apply_raise()
-# print(emp1.pay)
-# print(employee.__dict__)
+
 emp2.raise_amount = 1.08
 
 print(employee.raise_amount)
